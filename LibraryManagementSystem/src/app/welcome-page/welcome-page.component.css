@@ -1,0 +1,24 @@
+.containor {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-bar {
+  background-color: #d3e8e8;
+  height: 4vh;
+}
+
+.bg-img {
+  background-image: url(../../assets/Images/book-with-flowers.jpg);
+  height: 96vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(5px);
+}
+
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
