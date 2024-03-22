@@ -10,9 +10,10 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
-  declarations: [AppComponent, WelcomePageComponent],
+  declarations: [AppComponent, WelcomePageComponent, LoginComponent],
   imports: [BrowserModule, AppRoutingModule, MatRippleModule, MatButtonModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
