@@ -4,7 +4,7 @@
 }
 
 .upper-bar {
-  background-color: #d3e8e8;
+  background-color: var(--secondary-color);
   height: 4vh;
 }
 

@@ -1,17 +1,43 @@
+:root {
+  --primary-color: #82c5c8;
+  --secondary-color: #d3e8e8;
+}
+
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 body {
-  margin: 0;
   font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 .btn-primary {
-  text-decoration: none;
-  color: black;
-  background-color: #82c5c8;
-  padding: 12px 60px;
-  font-weight: 700;
+  background-color: var(--primary-color);
   border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 12px 60px;
 }
 
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  padding: 12px 60px;
+  text-decoration: none;
+}
+
+.link-primary:hover,
 .btn-primary:hover {
   box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -24,4 +50,15 @@ body {
 .title {
   margin-top: 1em;
   font-size: 1.5em;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.input-field {
+  padding: 0.5em;
+  width: 18em;
 }
