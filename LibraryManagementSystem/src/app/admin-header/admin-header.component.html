@@ -1,0 +1,24 @@
+<div class="upper-bar"></div>
+<div class="container">
+  <div class="logo-container">
+    <img src="../../assets/Icons/logo.png" alt="Logo of Books" class="logo" />
+    <h1 class="title">Heart_Lib</h1>
+  </div>
+  <nav>
+    <ul class="nav-bar">
+      <li class="nav-item">
+        <a
+          routerLink="adminHome"
+          (click)="setActiveLink('adminHome')"
+          [ngClass]="{ active: activeLink == 'adminHome' }"
+          >Home Page</a
+        >
+      </li>
+      <li class="nav-item"><a href="#">Book Management</a></li>
+      <li class="nav-item"><a href="#">User Management</a></li>
+      <li class="nav-item"><a href="#">Report Generation</a></li>
+    </ul>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>

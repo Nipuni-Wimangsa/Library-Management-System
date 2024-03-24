@@ -11,9 +11,11 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatRippleModule } from '@angular/material/core';
 import { MatButtonModule } from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminHeaderComponent } from './admin-header/admin-header.component';
 
 @NgModule({
-  declarations: [AppComponent, WelcomePageComponent, LoginComponent],
+  declarations: [AppComponent, WelcomePageComponent, LoginComponent, AdminHomeComponent, AdminHeaderComponent],
   imports: [BrowserModule, AppRoutingModule, MatRippleModule, MatButtonModule],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
