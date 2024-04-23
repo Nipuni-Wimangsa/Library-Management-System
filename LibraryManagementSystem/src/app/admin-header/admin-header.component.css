@@ -5,10 +5,12 @@
 }
 
 .logo-container {
+  color: black;
   display: flex;
   flex-direction: row;
   margin-left: 1em;
   margin-top: 0.5em;
+  text-decoration: none;
 }
 
 .title {

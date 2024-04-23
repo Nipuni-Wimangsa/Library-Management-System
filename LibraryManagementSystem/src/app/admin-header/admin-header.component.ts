@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-admin-header',
@@ -6,9 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './admin-header.component.css',
 })
 export class AdminHeaderComponent {
-  activeLink = '';
-
-  setActiveLink(link: string) {
-    this.activeLink = link;
-  }
+  @Input() isBold = false;
 }
