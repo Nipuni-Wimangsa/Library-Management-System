@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './admin-home.component.css',
 })
 export class AdminHomeComponent {
-  isActive = true;
+  activated = {
+    'home': true,
+    'book': false,
+    'user': false,
+    'report': false
+  }
 }

@@ -7,11 +7,25 @@
   <nav>
     <ul class="nav-bar">
       <li class="nav-item">
-        <a href="/adminHome" [ngClass]="{ active: isBold }">Home Page</a>
+        <a href="/adminHome" [ngClass]="{ active: activated.home }"
+          >Home Page</a
+        >
       </li>
-      <li class="nav-item"><a href="#">Book Management</a></li>
-      <li class="nav-item"><a href="#">User Management</a></li>
-      <li class="nav-item"><a href="#">Report Generation</a></li>
+      <li class="nav-item">
+        <a href="/bookManagement" [ngClass]="{ active: activated.book }"
+          >Book Management</a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="/userManagement" [ngClass]="{ active: activated.user }"
+          >User Management</a
+        >
+      </li>
+      <li class="nav-item">
+        <a href="/reportGeneration" [ngClass]="{ active: activated.report }"
+          >Report Generation</a
+        >
+      </li>
     </ul>
   </nav>
 </div>

@@ -6,5 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrl: './admin-header.component.css',
 })
 export class AdminHeaderComponent {
-  @Input() isBold = false;
+  @Input() activated = {
+    'home': false,
+    'book': false,
+    'user': false,
+    'report': false
+  };
 }
