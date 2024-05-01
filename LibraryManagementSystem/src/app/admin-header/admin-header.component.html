@@ -1,34 +1,5 @@
 <div class="upper-bar"></div>
-<div class="container">
-  <a class="logo-container" href="/adminHome">
-    <img src="../../assets/Icons/logo.png" alt="Logo of Books" class="logo" />
-    <h1 class="title">Heart_Lib</h1>
-  </a>
-  <nav>
-    <ul class="nav-bar">
-      <li class="nav-item">
-        <a href="/adminHome" [ngClass]="{ active: activated.home }"
-          >Home Page</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="/bookManagement" [ngClass]="{ active: activated.book }"
-          >Book Management</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="/userManagement" [ngClass]="{ active: activated.user }"
-          >User Management</a
-        >
-      </li>
-      <li class="nav-item">
-        <a href="/reportGeneration" [ngClass]="{ active: activated.report }"
-          >Report Generation</a
-        >
-      </li>
-    </ul>
-  </nav>
+<div class="header-container">
+    <img src="../../assets/Icons/menu.png" alt="menu icon for admin actions" id="menu-icon">
+    <h1 id="title">Heart_Lib Admin Console</h1>
 </div>
-<!-- 
-  * Responsive design
- -->
